@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Export Tabs as Shortcuts",
+  "version": "1.0.0",
+  "description": "One-click export of all open tabs in the current window as .webloc (macOS) or .url (Windows/Linux) shortcut files into Downloads/tab-export/.",
+  "permissions": ["tabs", "downloads"],
+  "action": {
+    "default_title": "Export tabs as shortcut files"
+  },
+  "background": {
+    "service_worker": "bg.js"
+  }
+}
